@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Additional styling */
+.container h2 {
+    margin-bottom: 20px;
+    /* text-transform: capitalize; */
+}
+
+/* Assuming you have styles for .btn and .btn-hero */
+.btn {
+    background-color: rgb(39, 39, 115);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+
+}
+
+.btn.btn-hero {
+    /* Your button styles here */
+}
