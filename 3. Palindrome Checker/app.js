@@ -1,9 +1,10 @@
 const btn= document.querySelector('.btn');
 
 btn.addEventListener('click', ()=> {
-    const val= document.querySelector('.output').innerHTML;
+    let val= document.querySelector('#output').value;
     let start= 0;
     let end= val.length - 1;
+    console.log(val);
     let ok= true;
     while(start< end){
         if(val[start]!= val[end]){
