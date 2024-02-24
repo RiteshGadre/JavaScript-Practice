@@ -3,13 +3,9 @@ for (var i = 0; i < btns; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var btnValue= this.innerHTML;
         makeSound(btnValue);
-        
-        
-    
     });
 
 }
-
 
 document.addEventListener("keypress", function (e) {
     makeSound(e.key)
