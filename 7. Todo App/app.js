@@ -1,26 +1,36 @@
-// {
-//     desccription: "",
-//     update(),
-//     delete()
-
-// }
+// createTask();
+// renderTask();
+// updateTask();
+// deleteTask();
 
 const totalTasks= [];
 var input= document.querySelector("input");
 var tasks= document.querySelector(".tasks")
 var button= document.getElementById("clickButton");
 
-button.addEventListener("click", () =>{
+button.addEventListener("click", () =>{ 
     var inputValue= input.value;
-    var newTask= document.createElement("p");
-    newTask.innerHTML= inputValue;
-    newTask.id= "task";
-    var deleteButton= document.createElement("button");
-    deleteButton.textContent= "Delete";
-    deleteButton.classList.add("delete-button");
-    newTask.appendChild(deleteButton);
-    totalTasks.push(inputValue);
+    var dateValue= new Date()
+    var newTask= document.createElement("div");
+    
+    
+    var taskDescription= document.createElement("p");
+    taskDescription.classList.add("taskdescription");
+    taskDescription.textContent= inputValue;
+
+    var status= document.createElement("p");
+    status.classList.add("status");
+    status.textContent= "Not Completed"
+
+    newTask.appendChild(taskDescription);
+    newTask.appendChild(status);
+   
+    totalTasks.push(newTask);
     tasks.appendChild(newTask);
     input.value= "";
     
 })
+
+function createTask(){
+
+}
